@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap 5 Example</title>
+    <title>Andras Gotts Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -9,7 +9,6 @@
       href="bootstrap/css/bootstrap.min.css"
     />
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script>
   </head>
   <div
   class="bg-image"
@@ -18,8 +17,19 @@
     max-width: 100%;
     height: 100%;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   "
 >
+<style>
+  #boxess {
+    border: 2px solid #04AA6D;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 25px;
+    padding: 20px;
+  }
+</style>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <div class="container-fluid">
@@ -95,6 +105,20 @@
         should stack vertically (on xxlarge, extra large, large, medium or small
         screens).
       </p>
+       <div class="row">
+        <div class="col" id="boxess">.col
+           <iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Lxn8tcXcKXM">
+</iframe> 
+        </div>
+        <div class="col" id="boxess">.col</div>
+        <div class="col" id="boxess">.col</div>
+      </div> 
+      <div class="row">
+        <div class="col" id="boxess"><p id="hiddentext" hidden>hello</p></div>
+        <div class="col" id="boxess">.col</div>
+        <div class="col" id="boxess">.col</div>
+      </div> 
       <p>AI image generation project</p>
       <p>restuarant website</p>
       <p>sdl2 game</p>
@@ -124,12 +148,11 @@
 </div>
 
 <script>
-  //https://github.com/qrohlf/trianglify
-  const pattern = trianglify({
-    width: window.innerWidth,
-    height: window.innerHeight
-  })
-  document.body.appendChild(pattern.toCanvas())
+  //https://github.com/qrohlf/trianglify;
+  document.getElementById("boxess").addEventListener("onclick",clicked)
+  function clicked () {
+    document.getElementById("boxess").style.display = "hidden"
+  }
 </script>
 
 </html>
