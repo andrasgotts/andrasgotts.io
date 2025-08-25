@@ -15,6 +15,14 @@
     border-radius: 25px;
     padding: 20px;
   }
+  #gridresume {
+    border: 2px solid #04AA6D;
+    background-color: #4e4e94;
+    color: white;
+    border-radius: 25px;
+    padding: 20px;
+  }
+
      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
   .flip-card {
     background-color: transparent;
@@ -140,6 +148,27 @@
         A navigation bar is a navigation header that is placed at the top of the
         page.
       </p>
+      <div class="container">
+        <h3>Resume</h3>
+      <div class="row row-cols-2" id="gridresume">
+        <div class="col" id="gridresume">
+          <h3>Profile</h3>
+          <p>Profile</p>
+        </div>
+        <div class="col" id="gridresume">
+          <h3>Education</h3>
+          <p>Education</p>
+        </div>
+        <div class="col" id="gridresume">
+          <h3>Skills</h3>
+          <p>Skills</p>
+        </div>
+        <div class="col" id="gridresume">
+          <h3>Experience</h3>
+          <p>Experience</p>
+        </div>
+      </div>
+    </div>
       <p>Profile</p>
       <p>Education</p>
       <p>Skills</p>
@@ -161,9 +190,19 @@
         screens).
       </p>
        <div class="row">
-        <div class="col" id="boxess">
-          <p>AI image generation project</p>
-           <iframe width="300" height="300" src="https://www.youtube.com/embed/Lxn8tcXcKXM" title="J102576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="col" id="boxess"><p>AI image generation project</p>
+          <div class="flip-card"><!--https://www.w3schools.com/howto/howto_css_flip_card.asp-->
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./imgs/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div> 
         </div>
         <div class="col" id="boxess"><p>Group Puzzley Game</p>
           <div class="flip-card"><!--https://www.w3schools.com/howto/howto_css_flip_card.asp-->
