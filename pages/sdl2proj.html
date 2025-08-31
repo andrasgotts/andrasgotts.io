@@ -50,24 +50,26 @@
     <div style="height: 50px;"></div>
 
     <div id="a1" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
-      <h3>Home</h3>
+      <h3>Project setup</h3>
       <p>
-        Welcome to my portfolio website!
-      </p>
-      <p>
-        This website includes my resume and showcases a number of my projects!
+        This project was about making a simple game in SDL2. I had to download the SDL2 library and link them to my project.
       </p>
     </div>
 
     <div style="height: 50px;"></div>
 
     <div id="a2" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
-      <h3>About me</h3>
+      <h3>Implementation</h3>
       <p>
-        My name is Andras Gotts
-      </p>
-      <p>
-        I like stuff.
+        As I had never used a game engine before, it took lots of getting used to running everything in a game loop. For example,
+         I sometimes used a for loop in the game loop which would slow down the game siginificantly. I also struggled with projectiles
+         travelling at the right speed which took lots of trial and error to fix. After some time using SDL2, I grew more confident 
+         and the game ended up being a game where the main player is an oreo and they shoot green circular projectiles and enemies.
+         I also struggled with spawning in enemies as this would eat of memory very quickly. I ended up using a vector for enemies and deleting
+         them when they are killed to save memory.
+         If the enemies got in range of the player they would take damage which would be shown by the players hp bar lowering. Every time
+         the player killed an enemy then the counter in the top left would increase by 1. The end goal is to get 50 kills without dying to win.
+         Overall, the project was successful as the functionality of the game worked well, but the assets were very simple and looked too basic. 
       </p>
     </div>
 
