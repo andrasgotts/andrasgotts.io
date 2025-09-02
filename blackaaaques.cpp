@@ -1,4 +1,4 @@
-#define __STDC_WANT_LIB_EXT1__
+//#define __STDC_WANT_LIB_EXT1__
 #include <iostream>
 //#include <Windows.h>
 #include <cstdlib>
