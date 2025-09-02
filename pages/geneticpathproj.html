@@ -52,11 +52,11 @@
     <div id="a1" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
       <h3>Home</h3>
       <p>
-        Welcome to my portfolio website!
+        Unfortunately I lost this project, stored in an old file space.
+
+        This project involved implementing a genetic algorithm to find the shortest path in a small map
       </p>
-      <p>
-        This website includes my resume and showcases a number of my projects!
-      </p>
+
     </div>
 
     <div style="height: 50px;"></div>
@@ -64,10 +64,12 @@
     <div id="a2" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
       <h3>About me</h3>
       <p>
-        My name is Andras Gotts
-      </p>
-      <p>
-        I like stuff.
+        The map had a start place, a end place, and some walls. The genetic algorithm was trained by starting with no instruction on how to get to the end.
+        Over many iterations the GA would find the shortest path.
+        The GA was implemented by initialising a population. I did 20 sets of lengths of 16.
+        Each generation involved running them to see how they performed, then pairing the best performers in each generation so they can be parents.
+        Then a new population is made from the parents randomly. Then a child be mutated if a random number is below a low percentage.
+        Keep doing this until the shortest path is found that matches the A* results.
       </p>
     </div>
 
