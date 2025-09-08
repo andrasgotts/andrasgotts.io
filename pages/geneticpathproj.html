@@ -4,14 +4,18 @@
     <title>Andras Gotts Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link href="../prismjs/prism.css" rel="stylesheet" />
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   </head>
-<style>
-
-</style>
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="background-color: #313178; color : white;display: block;margin: 8px;">
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <style></style>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+    style="background-color: #313178; color: white; display: block; margin: 8px"
+  >
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -27,15 +31,41 @@
             <div class="d-flex">
               <div class="btn-group">
                 <a class="btn btn-secondary nav-link" href="#a4">Portfolio</a>
-                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split nav-link" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle dropdown-toggle-split nav-link"
+                  id="dropdownMenuReference"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-reference="parent"
+                >
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                  <li><a class="dropdown-item" href="imagegenproj.html">ImageGenProject</a></li>
-                  <li><a class="dropdown-item" href="datawarehouseproj.html">DataWarehouseProject</a></li>
-                  <li><a class="dropdown-item" href="groupPuzzlegame.html">Group Breakout Game</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="sdl2proj.html">Sdl2GameProject</a></li>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuReference"
+                >
+                  <li>
+                    <a class="dropdown-item" href="imagegenproj.html"
+                      >ImageGenProject</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="datawarehouseproj.html"
+                      >DataWarehouseProject</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="groupPuzzlegame.html"
+                      >Group Breakout Game</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="sdl2proj.html"
+                      >Sdl2GameProject</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -47,51 +77,425 @@
       </div>
     </nav>
 
-    <div style="height: 50px;"></div>
+    <div style="height: 50px"></div>
 
-    <div id="a1" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
+    <div
+      id="a1"
+      class="container-fluid mt-3"
+      style="
+        scroll-margin-top: 60px;
+        padding-left: 75px;
+        padding-right: 75px;
+        text-align: center;
+      "
+    >
       <h3>Home</h3>
       <p>
-        Unfortunately I lost this project, stored in an old file space.
-
-        This project involved implementing a genetic algorithm to find the shortest path in a small map
+        Unfortunately I lost this project, stored in an old file space. This
+        project involved implementing a genetic algorithm to find the shortest
+        path in a small map
       </p>
-
     </div>
 
-    <div style="height: 50px;"></div>
+    <div style="height: 50px"></div>
 
-    <div id="a2" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
+    <div
+      id="a2"
+      class="container-fluid mt-3"
+      style="
+        scroll-margin-top: 60px;
+        padding-left: 75px;
+        padding-right: 75px;
+        text-align: center;
+      "
+    >
       <h3>About me</h3>
       <p>
-        The map had a start place, a end place, and some walls. The genetic algorithm was trained by starting with no instruction on how to get to the end.
-        Over many iterations the GA would find the shortest path.
-        The GA was implemented by initialising a population. I did 20 sets of lengths of 16.
-        Each generation involved running them to see how they performed, then pairing the best performers in each generation so they can be parents.
-        Then a new population is made from the parents randomly. Then a child be mutated if a random number is below a low percentage.
-        Keep doing this until the shortest path is found that matches the A* results.
+        The map had a start place, a end place, and some walls. The genetic
+        algorithm was trained by starting with no instruction on how to get to
+        the end. Over many iterations the GA would find the shortest path. The
+        GA was implemented by initialising a population. I did 20 sets of
+        lengths of 16. Each generation involved running them to see how they
+        performed, then pairing the best performers in each generation so they
+        can be parents. Then a new population is made from the parents randomly.
+        Then a child be mutated if a random number is below a low percentage.
+        Keep doing this until the shortest path is found that matches the A*
+        results.
       </p>
     </div>
 
-    <div style="height: 100px;"></div>
-
-      
-    <div style="display: flex; justify-content: center;">
-      <img src="../imgs/projectimgs/ga/maze.png" alt="code snippet" style="width:400px;height:250px;">
+    <div style="display: flex; justify-content: center">
+      <img
+        src="../imgs/projectimgs/ga/maze.png"
+        alt="code snippet"
+        style="width: 400px; height: 250px"
+      />
     </div>
+    <div style="height: 50px"></div>
+    <pre>
+      <code class="language-c++">
+      #include iostream
+#include fstream
+#include vector
+#include string
+#include cctype
+#include algorithm
+#include Math.h
+#include random
+#include ctime
+#include iomanip
+#include queue
 
-    <div style="height: 100px;"></div>
-    <div id="a5" class="container-fluid mt-3" style="text-align: center; border-top: 1px solid #e66d4c;padding-top:80px">
+struct pos {
+    float x = 0;
+    float y = 0;
+};
+
+int main(int argc, char* argv[])
+{
+    std::fstream myfile("Lab8TerrainFile1.txt");
+
+    std::vector int numbers;
+    std::string numberz;
+    char a;
+    while (myfile >> a)
+    {
+        numberz += a;
+    }
+
+    //std::cout << std::endl;
+
+    //std::cout << numberz << std::endl;
+
+    for (int i = 0; i < numberz.length() - 1; i++) {
+        numbers.push_back(numberz[i]-48);
+    }
+
+    for (std::vector int ::iterator itr = numbers.begin(); itr != numbers.end();) {
+        if (*itr < 0) {
+            itr = numbers.erase(itr);
+        }
+        else { 
+            ++itr;
+        }
+        
+    }
+    
+    const int sizeX = numbers.at(0);
+    const int sizeY = numbers.at(1);
+    std::cout << sizeX << " | " << sizeY << std::endl;
+    numbers.erase(numbers.begin(), numbers.begin() + 2);
+
+    //for (auto i : numbers) {
+    //    std::cout << i << std::endl;
+    //}
+
+    int chromosomes[20][16];
+
+    std::default_random_engine generator;
+    std::uniform_real_distribution double distribution(0.0, 1.0);
+    double r = 0;
+    for (int u = 0; u < 20; u++) {
+        for (int i = 0; i < 16; i++) {
+            //chromosomes[u][i] = round(distribution(generator));
+            r = distribution(generator);
+            if (r <= 0.5) {
+                chromosomes[u][i] = 0;
+            }
+            else {
+                chromosomes[u][i] = 1;
+            }
+        }
+    }
+
+    int iterator = 0;
+    //std::string cc;
+    pos start;
+    pos end;
+    pos wall;
+    std::vector pos walls;
+    
+
+    
+    int it = 0;
+    for (int y = 0; y < sizeY; y++) {
+        for (int x = 0; x < sizeX; x++) {
+            std::cout << numbers.at(it);
+            if (numbers.at(it) == 1) {//1 = wall
+                wall.y = y;
+                wall.x = x;
+                walls.push_back(wall);
+            }
+            else {
+                if (numbers.at(it) == 2) {//2 = start
+                    start.y = y;
+                    start.x = x;
+                    std::cout << "Start(x|y): " << start.x << " | " << start.y << std::endl;
+                }
+                else {
+                    if (numbers.at(it) == 3) {//3 = end
+                        end.y = y;
+                        end.x = x;
+                        std::cout << "End(x|y): " << end.x << " | " << end.y << std::endl;
+                    }
+                }
+            }
+            it++;
+        }
+        std::cout << std::endl;
+    }
+    
+
+    /*
+    int ite = 0;
+    for (int y = 0; y < sizeY; y++) {
+        for (int x = 0; x < sizeX; x++) {
+            std::cout << numbers.at(ite);
+            ite++;
+        }
+        std::cout << std::endl;
+    }
+    
+    for (std::vector int ::iterator itr = numbers.begin(); itr != numbers.end(); itr++,iterator++) {//0 = open space
+        if (numbers.at(iterator) == 1) {//1 = wall
+            wall.y = floor((iterator) / sizeX);
+            wall.x = (((iterator) % sizeX) * start.y);
+            walls.push_back(wall);
+
+        }
+        else {
+            if (numbers.at(iterator) == 2) {//2 = start
+                start.y = floor((iterator) / sizeX);
+                start.x = ((iterator % sizeX) * start.y);
+                std::cout << "Start(x|y): " << start.x << " | " << start.y << std::endl;
+            }
+            else {
+                if (numbers.at(iterator) == 3) {//3 = end
+                    end.y = floor((iterator) / sizeX);
+                    end.x = floor((iterator) / sizeY);
+                    std::cout << "End(x|y): " << end.x << " | " << end.y << std::endl;
+                }
+            }
+        }
+    }
+    */
+
+    bool left(false), right(false), up(false), down(false);
+    float fitness[20];
+    float totalfitness = 0;
+    pos population[20];
+    int newpopulation[20][16];
+    for (int u = 0; u < 20; u++) {
+        population[u] = start;
+        for (int i = 0; i < 16; i+=2) {
+            //std::cout << population[0].x << " | " << population[0].y << std::endl;
+            
+
+            //cc = chromosomes[u][i] + chromosomes[u][i+1];
+            //std::cout << "cc: " << cc << std::endl;
+            std::cout << "chromosomes: " << chromosomes[u][i] << " + " << chromosomes[u][i+1] << std::endl;
+
+            //wall can move in certain direction ?? BOOLS
+            for (auto itr : walls) {
+                if (itr.x < population[u].x + 1) {
+                    right = true;
+                }
+                else {
+                    right = false;
+                }
+                if (itr.x > population[u].x - 1) {
+                    left = true;
+                }
+                else {
+                    left = false;
+                }
+                if (itr.y < population[u].y - 1) {
+                    up = true;
+                }
+                else {
+                    up = false;
+                }
+                if (itr.y > population[u].y + 1) {
+                    down = true;
+                }
+                else {
+                    down = false;
+                }
+            }
+
+            if (chromosomes[u][i] == 0 && chromosomes[u][i + 1] == 0) {//00 = UP = y - 1
+                if (population[u].y > 0 && up == true) {
+                    population[u].y -= 1;
+                }
+            }
+            else {
+                if (chromosomes[u][i] == 1 && chromosomes[u][i + 1] == 0) {//10 = LEFT = x - 1
+                    if (population[u].x > 0 && left == true) {
+                        population[u].x -= 1;
+                    }
+                }
+                else {
+                    if (chromosomes[u][i] == 0 && chromosomes[u][i + 1] == 1) {//01 = RIGHT = x + 1
+                        if (population[u].x < sizeX && right == true) {
+                            population[u].x += 1;
+                        }
+                    }
+                    else {
+                        if (chromosomes[u][i] == 1 && chromosomes[u][i + 1] == 1) {//11 = DOWN = y + 1
+                            if (population[u].y < sizeY && down == true) {
+                                population[u].y += 1;
+                            }
+                        }
+                    }
+                }
+            }
+            if (end.x == population[u].x && end.y == population[u].y) {
+                i += 16;
+                fitness[u] = 1 / (abs(end.x - population[u].x) + abs(end.y - population[u].y) + 1);
+            }
+            /*
+            if (cc[0] == 0) {
+                if (cc[1] == 0) {
+                    //00 = UP = y - 1
+                    if (population[u].y > 0) {
+                        population[u].y -= 1;
+                    }
+                }
+                else {
+                    //01 = RIGHT = x + 1
+                    if (population[u].x < sizeX) {
+                        population[u].x += 1;
+                    }
+                    
+                }
+            }
+            else {
+                if (cc[1] == 1) {
+                    //11 = DOWN = y + 1
+                    if (population[u].y < sizeY) {
+                        population[u].y += 1;
+                    }
+                    
+                }
+                else {
+                    //10 = LEFT = x - 1
+                    if (population[u].x > 0) {
+                        population[u].x -= 1;
+                    }
+                    
+                }
+            }
+            */
+        }
+        std::cout << std::endl;
+        std::cout << population[u].x << " | " << population[u].y << std::endl;
+        std::cout << std::endl;
+       // for (int i = 0; i < 20; i++) {
+        //    std::cout << chromosomes[u][i] << " ";
+        //}
+       
+        }
+    for (int iter = 0; iter < 20; iter++) {
+        totalfitness += fitness[iter];
+    }
+    for (int iter = 0; iter < 20; iter++) {
+        fitness[iter] = (fitness[iter] / totalfitness) * 100;
+    }
+    srand(time(NULL));
+    float ran = rand() % 101;
+
+    for (int io = 0; io < 20; io++) {
+        totalfitness = 0;
+        ran = rand() % 101;
+        for (int iter = 0; iter < 20; iter++) {
+            totalfitness += fitness[iter];
+            if (totalfitness >= ran && iter > 0) {
+                std::swap(chromosomes[io], chromosomes[iter]);
+            }
+            else {
+                if (ran >= totalfitness - fitness[iter] && ran <= totalfitness) {
+                    std::swap(chromosomes[io], chromosomes[iter]);
+                }
+            }
+
+        }
+    }
+    float COR = 0.7;
+    for (int hh = 0; hh < 20; hh += 2) {
+        r = distribution(generator);
+        if (r <= COR) {
+            //crossover
+            for (int itr = 0; itr < 8; itr++) {
+                std::swap(chromosomes[hh][itr], chromosomes[hh + 1][itr + 8]);
+            }
+        }
+        else {
+            //offspring is same
+        }
+        /*
+        for (int ip = 0; ip < 16; ip += 2) {
+            r = distribution(generator);
+            if (r <= 0.5) {
+                chromosomes[hh][ip] = 0;
+            }
+            else {
+                chromosomes[hh][ip] = 1;
+            }
+        }
+        */
+    }
+    int MutateR = 0.001;
+    for (int aa = 0; aa < 20; aa++) {
+        for (int hh = 0; hh < 16; hh++) {
+            r = distribution(generator);
+            if (r <= MutateR) {
+                if (chromosomes[aa][hh] == 0) {
+                    chromosomes[aa][hh] = 1;
+                }
+                else {
+                    chromosomes[aa][hh] = 0;
+                }
+            }
+        }
+    }
+
+    return 0;
+}
+</code>
+    </pre>
+    <div style="height: 150px"></div>
+
+    <div
+      id="a5"
+      class="container-fluid mt-3"
+      style="
+        text-align: center;
+        border-top: 1px solid #e66d4c;
+        padding-top: 80px;
+      "
+    >
       <h3>Contact</h3>
-      <p>email: <a style="color:burlywood;text-decoration: underline;" href="mailto:andras.gotts@outlook.com">andras.gotts@outlook.com</a></p>
-      <p>linkedin: <a style="color:burlywood;text-decoration: underline;" href="https://www.linkedin.com/in/andrasgotts/">linkedin/andrasgotts</a></p>
-      <p><a style="color:burlywood;text-decoration: underline;" href="#">top</a></p>
+      <p>
+        email:
+        <a
+          style="color: burlywood; text-decoration: underline"
+          href="mailto:andras.gotts@outlook.com"
+          >andras.gotts@outlook.com</a
+        >
+      </p>
+      <p>
+        linkedin:
+        <a
+          style="color: burlywood; text-decoration: underline"
+          href="https://www.linkedin.com/in/andrasgotts/"
+          >linkedin/andrasgotts</a
+        >
+      </p>
+      <p>
+        <a style="color: burlywood; text-decoration: underline" href="#">top</a>
+      </p>
     </div>
-
   </body>
 
-<script>
-  //https://github.com/qrohlf/trianglify;
-</script>
-
+  <script src="../prismjs/prism.js"></script>
 </html>

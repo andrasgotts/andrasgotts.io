@@ -4,13 +4,16 @@
     <title>Andras Gotts Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   </head>
-<style>
-
-</style>
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="background-color: #313178; color : white;display: block;margin: 8px;">
+  <style></style>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+    style="background-color: #313178; color: white; display: block; margin: 8px"
+  >
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <div class="container-fluid">
         <ul class="navbar-nav">
@@ -27,15 +30,41 @@
             <div class="d-flex">
               <div class="btn-group">
                 <a class="btn btn-secondary nav-link" href="#a4">Portfolio</a>
-                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split nav-link" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle dropdown-toggle-split nav-link"
+                  id="dropdownMenuReference"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-reference="parent"
+                >
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                  <li><a class="dropdown-item" href="imagegenproj.html">ImageGenProject</a></li>
-                  <li><a class="dropdown-item" href="datawarehouseproj.html">DataWarehouseProject</a></li>
-                  <li><a class="dropdown-item" href="groupPuzzlegame.html">Group Breakout Game</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="sdl2proj.html">Sdl2GameProject</a></li>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuReference"
+                >
+                  <li>
+                    <a class="dropdown-item" href="imagegenproj.html"
+                      >ImageGenProject</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="datawarehouseproj.html"
+                      >DataWarehouseProject</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="groupPuzzlegame.html"
+                      >Group Breakout Game</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="sdl2proj.html"
+                      >Sdl2GameProject</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -47,66 +76,158 @@
       </div>
     </nav>
 
-    <div style="height: 50px;"></div>
+    <div style="height: 50px"></div>
 
-    <div id="a1" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
+    <div
+      id="a1"
+      class="container-fluid mt-3"
+      style="
+        scroll-margin-top: 60px;
+        padding-left: 75px;
+        padding-right: 75px;
+        text-align: center;
+      "
+    >
       <h3>Initial plan for project</h3>
       <p>
-        My plan for this project was to use a dataset of old artists with their art. Then i would allow the user to pick 3 artworks, that were displayed
-        in the gui, from an artist or genre or timeperiod. Then a new artwork would be generated from these artworks.
-        This was suggested by my project leader but they didn't take into account that AI needs to be trained so I had to decide on a new plan.
-        I decided to focus on just Van Gogh and generate art from his artworks with no prompting or input from the user, as this was more realistic.
-        I initially chose html for my gui as this seemed ideal if a museum were to use this tool, they may opt to run it online.
-        I chose to implement DDPM and DCGAN as these seemed to be effective models for image generation.
-        I was limited to just my computer which had a 6700XT AMD GPU.
+        My plan for this project was to use a dataset of old artists with their
+        art. Then i would allow the user to pick 3 artworks, that were displayed
+        in the gui, from an artist or genre or timeperiod. Then a new artwork
+        would be generated from these artworks. This was suggested by my project
+        leader but they didn't take into account that AI needs to be trained so
+        I had to decide on a new plan. I decided to focus on just Van Gogh and
+        generate art from his artworks with no prompting or input from the user,
+        as this was more realistic. I initially chose html for my gui as this
+        seemed ideal if a museum were to use this tool, they may opt to run it
+        online. I chose to implement DDPM and DCGAN as these seemed to be
+        effective models for image generation. I was limited to just my computer
+        which had a 6700XT AMD GPU.
       </p>
     </div>
-    <div style="display: flex; justify-content: center;">
-      <img src="../imgs/projectimgs/imagegen/flowchart.png" alt="Avatar" style="width:300px;height:300px;">
-      <img src="../imgs/projectimgs/imagegen/ganttchart.png" alt="Avatar" style="width:300px;height:300px;">
+    <div style="display: flex; justify-content: center">
+      <img
+        src="../imgs/projectimgs/imagegen/flowchart.png"
+        alt="Avatar"
+        style="width: 300px; height: 300px"
+      />
+      <img
+        src="../imgs/projectimgs/imagegen/ganttchart.png"
+        alt="Avatar"
+        style="width: 300px; height: 300px"
+      />
     </div>
-    <div style="height: 50px;"></div>
-    <div id="a2" class="container-fluid mt-3" style="scroll-margin-top: 60px; padding-left: 75px; padding-right: 75px; text-align:center;">
+    <div style="height: 50px"></div>
+    <div
+      id="a2"
+      class="container-fluid mt-3"
+      style="
+        scroll-margin-top: 60px;
+        padding-left: 75px;
+        padding-right: 75px;
+        text-align: center;
+      "
+    >
       <h3>Implementation</h3>
       <p>
-        The first problem I faced was that I couldn't use my GPU for training whilst on Windows as AMD requires ROCM to use the GPU which is only available on Linux.
-       I decided to dual boot Linux and Windows. Having never used Linux before, this led to a number of issues such as my GPU not being recognised by Python.
-       The solution to this was to run some commands in the terminal to help identify the GPU I wanted to use.
-
+        The first problem I faced was that I couldn't use my GPU for training
+        whilst on Windows as AMD requires ROCM to use the GPU which is only
+        available on Linux. I decided to dual boot Linux and Windows. Having
+        never used Linux before, this led to a number of issues such as my GPU
+        not being recognised by Python. The solution to this was to run some
+        commands in the terminal to help identify the GPU I wanted to use.
       </p>
       <p>
-        I initially used a basic GAN to get used to using PyTorch, whilst this was helpful, the results were poor. Next i implemented DCGAN which has convolutional layers
-       which are better with images. I however couldn't improve the size of the image past 64x64 because of my small VRAM size. The results seemed to show some learning
-       but the quality was simply too bad. The dataset for Van Gogh artworks was 877 artworks, which for training AI is quite small, especially without good hardware.
-       I implemented various data augmentation techniques but this didn't help the results.
-       This led to me having to research alternative solutions. I decided to try CycleGAN which trained two datasets against each other. I used a landscape dataset of 2676 images.
-       The results were much better and much higher quality, there were clear resemblances with Van Gogh's artworks.
-       DDPM was the last model I implemented and I knew that this model would me the most limited by my hardware. I could only use 64x64 and after many nights of
-       training, the results didn't resemble anything, they were mostly just noise. I decided to instead use a pretrained Van Gogh diffusion model from HuggingFace.
-       This could use prompts to generate anything in a Van Gogh style.
-
+        I initially used a basic GAN to get used to using PyTorch, whilst this
+        was helpful, the results were poor. Next i implemented DCGAN which has
+        convolutional layers which are better with images. I however couldn't
+        improve the size of the image past 64x64 because of my small VRAM size.
+        The results seemed to show some learning but the quality was simply too
+        bad. The dataset for Van Gogh artworks was 877 artworks, which for
+        training AI is quite small, especially without good hardware. I
+        implemented various data augmentation techniques but this didn't help
+        the results. This led to me having to research alternative solutions. I
+        decided to try CycleGAN which trained two datasets against each other. I
+        used a landscape dataset of 2676 images. The results were much better
+        and much higher quality, there were clear resemblances with Van Gogh's
+        artworks. DDPM was the last model I implemented and I knew that this
+        model would me the most limited by my hardware. I could only use 64x64
+        and after many nights of training, the results didn't resemble anything,
+        they were mostly just noise. I decided to instead use a pretrained Van
+        Gogh diffusion model from HuggingFace. This could use prompts to
+        generate anything in a Van Gogh style.
       </p>
-      <img src="../imgs/projectimgs/imagegen/cyclegan.png" alt="Avatar" style="width:400px;height:300px;">
-      <img src="../imgs/projectimgs/imagegen/dcgan.png" alt="Avatar" style="width:400px;height:300px;">
-      <img src="../imgs/projectimgs/imagegen/ddpm.png" alt="Avatar" style="width:300px;height:300px;">
-      <img src="../imgs/projectimgs/imagegen/difgenimage.png" alt="Avatar" style="width:300px;height:300px;">
-      
-      <iframe width="300" height="300" src="https://www.youtube.com/embed/Lxn8tcXcKXM" title="J102576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div style="height: 150px;"></div>
+    <div style="display: flex; justify-content: center">
+      <img
+        src="../imgs/projectimgs/imagegen/cyclegan.png"
+        alt="Avatar"
+        style="width: 400px; height: 300px"
+      />
+      <img
+        src="../imgs/projectimgs/imagegen/dcgan.png"
+        alt="Avatar"
+        style="width: 400px; height: 300px"
+      />
+      <img
+        src="../imgs/projectimgs/imagegen/ddpm.png"
+        alt="Avatar"
+        style="width: 300px; height: 300px"
+      />
+      <img
+        src="../imgs/projectimgs/imagegen/difgenimage.png"
+        alt="Avatar"
+        style="width: 300px; height: 300px"
+      />
+    </div>
+    <div style="display: flex; justify-content: center">
+      <iframe
+        width="300"
+        height="300"
+        src="https://www.youtube.com/embed/Lxn8tcXcKXM"
+        title="J102576"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-    <div id="a5" class="container-fluid mt-3" style="text-align: center; border-top: 1px solid #e66d4c;padding-top:80px">
+    <div style="height: 150px"></div>
+
+    <div
+      id="a5"
+      class="container-fluid mt-3"
+      style="
+        text-align: center;
+        border-top: 1px solid #e66d4c;
+        padding-top: 80px;
+      "
+    >
       <h3>Contact</h3>
-      <p>email: <a style="color:burlywood;text-decoration: underline;" href="mailto:andras.gotts@outlook.com">andras.gotts@outlook.com</a></p>
-      <p>linkedin: <a style="color:burlywood;text-decoration: underline;" href="https://www.linkedin.com/in/andrasgotts/">linkedin/andrasgotts</a></p>
-      <p><a style="color:burlywood;text-decoration: underline;" href="#">top</a></p>
+      <p>
+        email:
+        <a
+          style="color: burlywood; text-decoration: underline"
+          href="mailto:andras.gotts@outlook.com"
+          >andras.gotts@outlook.com</a
+        >
+      </p>
+      <p>
+        linkedin:
+        <a
+          style="color: burlywood; text-decoration: underline"
+          href="https://www.linkedin.com/in/andrasgotts/"
+          >linkedin/andrasgotts</a
+        >
+      </p>
+      <p>
+        <a style="color: burlywood; text-decoration: underline" href="#">top</a>
+      </p>
     </div>
-
   </body>
 
-<script>
-  //https://github.com/qrohlf/trianglify;
-</script>
-
+  <script>
+    //https://github.com/qrohlf/trianglify;
+  </script>
 </html>
